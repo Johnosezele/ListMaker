@@ -8,8 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.johnosezele.listmaker.R
 import com.johnosezele.listmaker.databinding.MainFragmentBinding
+import com.johnosezele.listmaker.models.MainViewModel
+import com.johnosezele.listmaker.models.MainViewModelFactory
 
 class MainFragment : Fragment() {
 

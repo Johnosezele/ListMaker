@@ -1,4 +1,4 @@
-package com.johnosezele.listmaker.ui.main
+package com.johnosezele.listmaker.models
 
 import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel

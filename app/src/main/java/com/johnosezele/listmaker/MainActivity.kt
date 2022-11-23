@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.text.InputType
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.preference.PreferenceManager
 import com.johnosezele.listmaker.databinding.MainActivityBinding
 import com.johnosezele.listmaker.ui.main.MainFragment
-import com.johnosezele.listmaker.ui.main.MainViewModel
-import com.johnosezele.listmaker.ui.main.MainViewModelFactory
+import com.johnosezele.listmaker.models.MainViewModel
+import com.johnosezele.listmaker.models.MainViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         viewModel = ViewModelProvider(this,
-        MainViewModelFactory(PreferenceManager.getDefaultSharedPreferences(this)))
+        MainViewModelFactory(PreferenceManager.getDefaultSharedPreferences(this))
+        )
             .get(MainViewModel::class.java)
 
         //TODO:(Step 4b) setup the binding for dialog
